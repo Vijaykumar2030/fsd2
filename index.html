@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Directory Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Company Directory Portal</h1>
+
+    <section class="registration-form">
+        <h2>Employee Registration Form</h2>
+        <form action="/submit" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="department">Department:</label>
+            <select id="department" name="department" required>
+                <option value="IT">IT</option>
+                <option value="HR">HR</option>
+                <option value="Sales">Sales</option>
+                <option value="Marketing">Marketing</option>
+            </select>
+
+            <label for="employee-id">Employee ID:</label>
+            <input type="number" id="employee-id" name="employee-id" required>
+
+            <label for="profile-pic-url">Profile Picture URL:</label>
+            <input type="url" id="profile-pic-url" name="profile-pic-url" required>
+
+            <button type="submit">Register Employee</button>
+        </form>
+    </section>
+
+    <section class="employee-list">
+        <h2>Employee List</h2>
+        <ol>
+            <li><a href="mailto:john@example.com">John Doe</a></li>
+            <li><a href="mailto:jane@example.com">Jane Smith</a></li>
+        </ol>
+    </section>
+
+    <section class="employee-details">
+        <h2>Employee Details</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Employee ID</th>
+                    <th>Department</th>
+                    <th>Profile Picture</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>12345</td>
+                    <td>IT</td>
+                    <td><img src="profile-pic.jpg" alt="Profile Picture" width="50" height="50"></td>
+                </tr>
+                <tr>
+                    <td>Jane</td>
+                    <td>67890</td>
+                    <td>HR</td>
+                    <td><img src="profile-pic.jpg" alt="Profile Picture" width="50" height="50"></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </section>
+
+    <section class="map">
+        <h2>Company Location</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+</body>
+</html>
